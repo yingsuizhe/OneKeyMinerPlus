@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "onekeyminerplus",
+  "version": "${version}",
+  "name": "OneKeyMinerPlus",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/onekeyminerplus/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.ying.fabric.ExampleModFabric"
+    ],
+    "client": [
+      "com.ying.fabric.client.ExampleModFabricClient"
+    ]
+  },
+  "mixins": [
+    "onekeyminerplus.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "architectury": ">=22.0.3",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
